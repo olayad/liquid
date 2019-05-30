@@ -6,14 +6,14 @@ If you have used Bitcoin Core “bitcoin-qt” in the past, you will be familiar
 
 To set up and run Liquid Core on your machine you need to download the Liquid Core binary for your platform.
 
-All binaries variants are available at https://github.com/Blockstream/liquid/releases/tag/liquid.3.14.1.23
+All binaries variants are available at https://github.com/ElementsProject/elements/releases
+
 
 #### Windows installation
 
+For windows you can download the installer available [here](https://github.com/ElementsProject/elements/releases/download/elements-0.17.0/elements-0.17.0-win64-setup-unsigned.exe).
 
-For windows you can download the installer available [here](https://github.com/Blockstream/liquid/releases/download/liquid.3.14.1.23/liquid-3.14.1.23-win64-setup-unsigned.exe).
-
-If you prefer a 32bit variant or a variant without installer please see [here](https://github.com/Blockstream/liquid/releases/tag/liquid.3.14.1.23).
+If you prefer a 32bit variant or a variant without installer please see [here](https://github.com/ElementsProject/elements/releases).
 
 Note: If you want to use a different data directory, for example an external hard drive, you can follow [this guide](https://bitzuma.com/posts/moving-the-bitcoin-core-data-directory/).
 
@@ -24,10 +24,7 @@ Note that after making the required changes, you will need to restart your Liqui
 
 #### MacOs X Installation 
 
-
-
-For MacOs X you can download the dmg file available [here](https://github.com/Blockstream/liquid/releases/download/liquid.3.14.1.23/liquid-3.14.1.23-osx-unsigned.dmg)
-
+For MacOs X you can download the dmg file available [here](https://github.com/ElementsProject/elements/releases/download/elements-0.17.0/liquid-0.17.0-osx-unsigned.dmg)
 
 Note: If you want to use a different data directory, for example an external hard drive, you can follow [this guide](https://bitzuma.com/posts/moving-the-bitcoin-core-data-directory/).
 
@@ -38,8 +35,7 @@ Note that after making the required changes, you will need to restart your Liqui
 
 #### Linux Installation 
 
-
-Download and untar the Liquid binaries available [here](https://github.com/Blockstream/liquid/releases/download/liquid.3.14.1.23/liquid-3.14.1.23-x86_64-linux-gnu.tar.gz)
+Download and untar the Liquid binaries available [here](https://github.com/ElementsProject/elements/releases/download/elements-0.17.0/liquid-0.17.0-x86_64-linux-gnu.tar.gz)
 
 Note: If you want to use a different data directory, for example an external hard drive, you can follow [this guide](https://bitzuma.com/posts/moving-the-bitcoin-core-data-directory/).
 
@@ -56,8 +52,8 @@ This guide assumes you are already running a Bitcoin full node.
 
 To allow Liquid Core to communicate with your Bitcoin node, certain parameters must be included in your Bitcoin configuration file and potentially to the Liquid configuration file.
 
-#### bitcoin.conf
 
+#### bitcoin.conf
 
 Note: Using a cookie file is now the prefered way of authenticating against bitcoind. Alternatively, you can also use the RPC parameters (‘rpcuser’, ‘rpcport’, and ‘rpcpassword’) as the authentication method.
 
@@ -89,5 +85,5 @@ With this setting, you do not need to run a Bitcoin node and Liquid will not att
 
 **We advise against disabling peg-in validation unless you are aware of the implications**, running in a testing environment, or are not dealing with large amounts of funds.  
 
-The template Liquid configuration file can be used as a reference when configuring your own Liquid node.
+The [Liquid configuration file template](https://github.com/Blockstream/liquid/blob/liquid.3.14.1/share/examples/liquid.conf) can be used as a reference when configuring your own Liquid node.
 
